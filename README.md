@@ -163,12 +163,18 @@ Rode cada comando abaixo. Todos devem responder com um número de versão ou um 
 ```bash
 node --version
 ffmpeg -version
-whisper --help
 yt-dlp --version
 npx hyperframes --version
 ```
 
-Se o `whisper` não for encontrado no Windows, teste `python -m whisper --help`. Se esse funcionar, está tudo certo: o Claude usa esse caminho sozinho.
+Para o Whisper, o comando muda conforme o sistema:
+
+| Sistema | Comando |
+| --- | --- |
+| Windows | `python -m whisper --help` |
+| macOS e Linux | `whisper --help` |
+
+No Windows, o comando `whisper` sozinho costuma não ser encontrado, e isso é normal. O que vale é o `python -m whisper`, e é ele que o Claude usa.
 
 ### 5. Abra a pasta no Claude Code
 

@@ -21,10 +21,10 @@ Siga as regras do `CLAUDE.md`. Trabalhe na raiz do projeto. **Nunca altere nada 
 ## 2. Transcrever
 
 ```bash
-whisper "01-bruto/<arquivo>" --model small --language pt --word_timestamps True --output_format json --output_dir "trabalho/<nome>"
+python -m whisper "01-bruto/<arquivo>" --model small --language pt --word_timestamps True --output_format json --output_dir "trabalho/<nome>"
 ```
 
-Se `whisper` não for encontrado, use `python -m whisper` com os mesmos argumentos. Leia a transcrição e descarte palavras que o Whisper inventa em silêncio (por exemplo "Obrigado." no fim).
+No macOS e no Linux, use `whisper` no lugar de `python -m whisper`. Se um não funcionar, tente o outro com os mesmos argumentos. Leia a transcrição e descarte palavras que o Whisper inventa em silêncio (por exemplo "Obrigado." no fim).
 
 ## 3. Cortar
 

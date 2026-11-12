@@ -17,7 +17,7 @@ Se alguma das três pastas numeradas não existir, crie antes de começar.
 ## Ferramentas
 
 - **FFmpeg / ffprobe**: cortes, junções, análise e mixagem.
-- **Whisper** (`whisper`, ou `python -m whisper` se o primeiro não estiver no PATH): transcrição. Modelo padrão `small`, idioma `pt`. Se a transcrição sair ruim, use `medium`.
+- **Whisper**: transcrição. No Windows, rode `python -m whisper`. No macOS e no Linux, rode `whisper`. Se um não funcionar, tente o outro. Modelo padrão `small`, idioma `pt`. Se a transcrição sair ruim, use `medium`.
 - **yt-dlp**: download dos vídeos de referência.
 - **HyperFrames** (skills `/hyperframes`, `/hyperframes-cli`, `/hyperframes-registry`, `/media-use`): legendas, motion, efeitos e render. Leia a skill `hyperframes` antes de montar qualquer projeto.
 

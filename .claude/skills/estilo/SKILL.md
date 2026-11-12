@@ -41,7 +41,7 @@ Para cada arquivo em `02-referencias/`, salve os resultados em `trabalho/estilo/
    ffmpeg -i "<arquivo>" -vf "fps=1,scale=540:-1" "trabalho/estilo/<arquivo>/q%03d.jpg"
    ```
    Observe: posição, tamanho, peso e caixa da legenda; palavras por linha; cor de destaque; contorno ou fundo; zooms e punch-ins; textos e cards na tela; enquadramento; o que aparece no primeiro quadro (gancho).
-4. **Fala:** transcreva com Whisper (`--model small --language pt --word_timestamps True --output_format json`) e calcule palavras por segundo e o tamanho das pausas que sobraram na edição.
+4. **Fala:** transcreva com Whisper (`python -m whisper` no Windows, `whisper` no macOS e no Linux; `--model small --language pt --word_timestamps True --output_format json`) e calcule palavras por segundo e o tamanho das pausas que sobraram na edição.
 5. **Som:** veja se há trilha de fundo, efeitos sonoros em cortes ou textos e o volume da trilha em relação à voz (`ffmpeg -i "<arquivo>" -af volumedetect -f null -`).
 
 ## 4. Escrever a folha
