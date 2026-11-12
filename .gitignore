@@ -1,0 +1,12 @@
+# Vídeos e arquivos de cada pessoa (as pastas são criadas no passo 2 do tutorial)
+01-bruto/
+02-referencias/
+03-prontos/
+trabalho/
+
+# Skills do HyperFrames (cada pessoa instala no passo 3 do tutorial)
+.claude/skills/hyperframes/
+.claude/skills/hyperframes-cli/
+.claude/skills/hyperframes-registry/
+.claude/skills/media-use/
+skills-lock.json
